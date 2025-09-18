@@ -1,35 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SirBrams Tech — Contact</title>
-  <link rel="stylesheet" href="css/style.css" />
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SirBrams Tech — Contact</title>
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-<!-- Header -->
+<!-- header -->
 <header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand">SirBrams Tech</a>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header><br>
+<div class="container header-inner">
+<a href="index.html" class="brand">SirBrams Tech</a>
+<button id="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰<span class="sr-only"></span></button>
+<nav id="main-nav" class="main-nav" aria-label="Main navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<br>
 
 <!-- Main -->
 <main class="container">
 
   <h1 style="text-align: center;">Contact Us</h1>
   <hr>
-  <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+  <div class="contact-grid">
 
     <!-- map -->
     <section class="map-section">
@@ -52,23 +52,18 @@
       </div>
     </section>
 
-    <!-- contact form -->
-    <section class="form-section">
+     <!-- Contact -->
+  <section id="contact" class="contact fade-in">
+    <div class="container">
       <h2>Send Us a Message</h2>
-      <form id="contact-form" class="contact-form">
-        <label for="name">Name</label>
-        <input id="name" name="name" required minlength="2" />
-
-        <label for="email-contact">Email</label>
-        <input id="email-contact" type="email" name="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-
-        <button class="btn" type="submit">Send Message</button>
-        <p id="contact-msg" aria-live="polite" class="form-msg"></p>
+      <form id="contact-form">
+        <input type="text" placeholder="Enter Your Name" required/>
+        <input type="email" placeholder=" Enter Your Email" required/>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
       </form>
-    </section>
+    </div>
+  </section>
 
   </div>
 
@@ -77,9 +72,10 @@
 <!-- Footer -->
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; <span id="year-contact"></span> SirBrams Tech. All rights reserved.</p>
+    <p>&copy; <span id="year-footer"></span> SirBrams Tech. All rights reserved.</p>
   </div>
 </footer>
+<script src="js/main.js" defer></script>
 
 </body>
 </html>

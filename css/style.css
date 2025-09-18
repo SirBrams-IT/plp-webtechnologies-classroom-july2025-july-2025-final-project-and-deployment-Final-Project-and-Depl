@@ -284,34 +284,26 @@ body {
     }
 
 /* Contact Form */
-    .contact-form {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-      width: 100%;
-      align-content:center ;
-      height: 100vh;
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+    .contact form {
+      margin-top:30px;
+      max-width: 500px;
+      display: grid;
+      gap: 1rem;
     }
-    .contact-form label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
+
+    .contact input,
+    .contact textarea {
       padding: 0.75rem;
-      margin-bottom: 1.5rem;
       border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      border-color: #0d3b66;
-      outline: none;
+      border-radius: 5px;
+      font-family: inherit;
     }
     .btn {
       display: inline-block;
@@ -389,6 +381,15 @@ body {
   .hero-image {
     order: -1; 
   }
+   .contact-grid {
+      grid-template-columns: 1fr;
+    }
+    .map-section iframe {
+      height: 250px; /* shrink map height for mobile */
+    }
+    .contact form {
+      width: 100%;
+    }
 }
 
 

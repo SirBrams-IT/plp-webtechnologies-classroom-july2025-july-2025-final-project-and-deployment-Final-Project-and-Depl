@@ -1,26 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SirBrams Tech — Services</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SirBrams Tech — Services</title>
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-<!-- Header -->
+<!-- header -->
 <header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand">SirBrams Tech</a>
-    <nav id="main-nav" class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<div class="container header-inner">
+<a href="index.html" class="brand">SirBrams Tech</a>
+<button id="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰<span class="sr-only"></span></button>
+<nav id="main-nav" class="main-nav" aria-label="Main navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
 <!-- Main -->
@@ -40,7 +40,7 @@
 
     <!-- Graphic Design -->
     <article class="service-card">
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Graphic Design" />
+      <img src="images/graphic.png" alt="Graphic Design" />
       <h3>Graphic Design</h3>
       <p>
         Logos, branding kits, social media assets, and engaging course materials — 
@@ -50,7 +50,7 @@
 
     <!-- CV & Interview Prep -->
     <article class="service-card">
-      <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=900&q=80" alt="CV and Interview Prep" />
+      <img src=images/cv.png alt="CV and Interview Prep" />
       <h3>CV & Interview Prep</h3>
       <p>
         Professional CV building, portfolio review, and interview coaching — 
@@ -63,9 +63,10 @@
 <!-- Footer -->
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; <span id="year-contact"></span> SirBrams Tech. All rights reserved.</p>
+    <p>&copy; <span id="year-footer"></span> SirBrams Tech. All rights reserved.</p>
   </div>
 </footer>
+<script src="js/main.js" defer></script>
 
 </body>
 </html>
